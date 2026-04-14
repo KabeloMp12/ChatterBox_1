@@ -77,6 +77,10 @@ String returnLoginStatus(boolean loggedIn) {
             return "Username or password incorrect, please try again.";
         }
     }
+
+    boolean checkUserName(String kyl_) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 } 
 
 public class ChatterBox_Final {
@@ -103,5 +107,17 @@ public class ChatterBox_Final {
 
         String result = myLogin.registerUser();
         System.out.println("\n" + result);
+    }
+
+    boolean checkPhone(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    boolean checkPassword(String chtter123) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    boolean checkUsername(String kyl_) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
