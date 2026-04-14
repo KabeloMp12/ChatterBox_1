@@ -42,3 +42,6 @@ class Login {
         return hasSpecial;
     }
  
+ boolean checkCellPhoneNumber(String cellphone_number) {
+        return cellphone_number.startsWith("+27") && cellphone_number.length() == 10;
+    }
