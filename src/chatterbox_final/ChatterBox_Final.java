@@ -65,3 +65,7 @@ public String registerUser() {
                 + "" + "Welcome  " +  firstName + "   " + lastName +"   It is great to see you";
        
     }
+
+boolean loginUser(String username, String password) {
+        return username.equals(StoreUsername) && password.equals(StorePassword);
+    }
