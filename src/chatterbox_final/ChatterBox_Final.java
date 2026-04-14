@@ -79,3 +79,29 @@ String returnLoginStatus(boolean loggedIn) {
     }
 } 
 
+public class ChatterBox_Final {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        Login myLogin = new Login(); 
+
+        System.out.println("--- Register ---");
+        
+        System.out.print("First Name: ");
+        myLogin.firstName = scan.nextLine();
+        
+        System.out.print("Last Name: ");
+        myLogin.lastName = scan.nextLine();
+        
+        System.out.print("Username: ");
+        myLogin.StoreUsername = scan.nextLine();
+        
+        System.out.print("Password: ");
+        myLogin.StorePassword = scan.nextLine();
+        
+        System.out.print("Cell (+27...): ");
+        myLogin.StoreCellphonenumber = scan.nextLine();
+
+        String result = myLogin.registerUser();
+        System.out.println("\n" + result);
+    }
+}
