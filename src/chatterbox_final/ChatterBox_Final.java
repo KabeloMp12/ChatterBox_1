@@ -69,3 +69,13 @@ public String registerUser() {
 boolean loginUser(String username, String password) {
         return username.equals(StoreUsername) && password.equals(StorePassword);
     }
+
+String returnLoginStatus(boolean loggedIn) {
+        if (loggedIn == true) {
+            return "Welcome " + firstName + ", " + lastName + " it is great to see you again.";
+        } else {
+            return "Username or password incorrect, please try again.";
+        }
+    }
+} 
+
