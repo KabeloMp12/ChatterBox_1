@@ -45,3 +45,23 @@ class Login {
  boolean checkCellPhoneNumber(String cellphone_number) {
         return cellphone_number.startsWith("+27") && cellphone_number.length() == 10;
     }
+
+
+public String registerUser() {
+       
+        if (checkUserName() == false) {
+            return "Username is not correctly formatted; please ensure that your username contains an underscore and is no more than 5 characters long.";
+        } 
+        
+        if (checkPasswordComplexity(StorePassword) == false) {
+            return "Password is not correctly formatted; please ensure that the password contains at least eight characters, a capital letter, a number, and a special character.";
+        }
+        
+        if (checkCellPhoneNumber(StoreCellphonenumber) == false) {
+            return "Cell phone number incorrectly formatted or does not contain international code.";
+        }
+
+        return "The two above conditions have been met, and the user has been registered successfully. "
+                + "" + "Welcome  " +  firstName + "   " + lastName +"   It is great to see you";
+       
+    }
